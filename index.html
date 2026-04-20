@@ -1,121 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Our Wedding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      line-height: 1.6;
-      color: #333;
-      background: #fafafa;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f7f2;
+      color: #222;
     }
-    header {
-      background: #d8a7b1;
+
+    .banner {
+      position: relative;
+      height: 300px;
+      background-image: url('my-image.jpg'); /* Replace with your photo */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: white;
-      padding: 60px 20px;
-      text-align: center;
     }
-    nav {
-      background: #333;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background: #555;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #d8a7b1;
-    }
-    .schedule-item {
-      margin-bottom: 15px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .btn {
-      display: inline-block;
+
+    .banner h1 {
+      background: rgba(0, 0, 0, 0.5);
       padding: 10px 20px;
-      background: #d8a7b1;
+      border-radius: 8px;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #4f6f8a;
+      padding: 10px 0;
+      border-bottom: 1px solid #c9a96e;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
-    .btn:hover {
-      background: #c48d98;
+
+    nav ul li a:hover {
+      color: #c9a96e;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #c9a96e;
+    }
+
+    .bottom-banner {
+      background: linear-gradient(to top, #4f6f8a, #6f8fa8);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    .bottom-banner p {
+      margin: 0;
+      font-weight: 300;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Emma & Liam</h1>
-  <p>We’re getting married!</p>
-  <p>June 20, 2026</p>
-</header>
+  <div class="banner">
+    <h1>Your Title Here</h1>
+  </div>
 
-<nav>
-  <a href="#about">About Us</a>
-  <a href="#details">Details</a>
-  <a href="#schedule">Schedule</a>
-  <a href="#rsvp">RSVP</a>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="#section1">Section 1</a></li>
+      <li><a href="#section2">Section 2</a></li>
+      <li><a href="#section3">Section 3</a></li>
+    </ul>
+  </nav>
 
-<section id="about">
-  <h2>Our Story</h2>
-  <p>
-    Welcome! We’re so excited to celebrate our special day with you.
-    This is where you can share your story—how you met, your journey,
-    and what this day means to you.
-  </p>
-</section>
+  <section id="section1">
+    <h2>Section 1</h2>
+    <p>Content for section 1 goes here.</p>
+  </section>
 
-<section id="details">
-  <h2>Wedding Details</h2>
-  <p><strong>Date:</strong> June 20, 2026</p>
-  <p><strong>Location:</strong> Beautiful Garden Venue</p>
-  <p><strong>Address:</strong> 123 Wedding Lane, Your City</p>
-</section>
+  <section id="section2">
+    <h2>Section 2</h2>
+    <p>Content for section 2 goes here.</p>
+  </section>
 
-<section id="schedule">
-  <h2>Schedule</h2>
-  <div class="schedule-item"><strong>2:00 PM:</strong> Ceremony</div>
-  <div class="schedule-item"><strong>3:00 PM:</strong> Cocktail Hour</div>
-  <div class="schedule-item"><strong>5:00 PM:</strong> Reception & Dinner</div>
-  <div class="schedule-item"><strong>8:00 PM:</strong> Dancing</div>
-</section>
+  <section id="section3">
+    <h2>Section 3</h2>
+    <p>Content for section 3 goes here.</p>
+  </section>
 
-<section id="rsvp">
-  <h2>RSVP</h2>
-  <p>Please let us know if you can join us.</p>
-  <a class="btn" href="mailto:your@email.com?subject=Wedding RSVP">
-    RSVP via Email
-  </a>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <p>Add your favorite photos here!</p>
-</section>
-
-<footer>
-  <p>With love, Emma & Liam</p>
-</footer>
+  <div class="bottom-banner">
+    <p>© 2026 Your Brand — All rights reserved</p>
+  </div>
 
 </body>
 </html>
